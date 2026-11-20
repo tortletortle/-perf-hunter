@@ -1,0 +1,6 @@
+__pycache__/
+raw_results.json
+results.csv
+shrinks.json
+run.log
+tests.log
