@@ -54,6 +54,7 @@ def main():
                 for b in row['blocks']:
                     assert math.isclose(b['a_ns'] / b['b_ns'], b['ratio'], rel_tol=1e-12)
             states[row['id']].append(row['ratio'])
+        # A finalist that met a stopping boundary in this round must never appear again.
         for fid, observations in states.items():
             if observations and a.classify(observations, 24)['status'] != 'continue_sampling':
                 stopped.add(fid)
@@ -87,10 +88,7 @@ def main():
     assert all(x['status'] == 'confirmed_median_ratio_above_threshold' for x in positive)
     assert all(x['status'] == 'futility_evidence_below_90pct_reproducibility' for x in negative)
     _, alpha = a.thresholds(24)
-    if rounds is not None or observations_only:
-        assert stats['adaptive_worker_samples'] == sum(len(x) for x in states.values()) == 245
-    else:
-        assert stats['adaptive_worker_samples'] == 245
+    assert stats['adaptive_worker_samples'] == sum(len(x) for x in states.values()) == 245 if rounds is not None else stats['adaptive_worker_samples'] == 245
     assert stats['adaptive_paired_blocks'] == sum(x['paired_blocks'] for x in summary) == 735
     assert stats['fixed_v05_paired_blocks'] == 24 * 10 * 5 == 1200
     assert math.isclose(stats['paired_block_reduction'], 0.3875, abs_tol=1e-12)
