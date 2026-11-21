@@ -1,0 +1,18 @@
+round 1: active=24 status={'continue_sampling': 24}
+round 2: active=24 status={'continue_sampling': 24}
+round 3: active=24 status={'continue_sampling': 24}
+round 4: active=24 status={'continue_sampling': 16, 'futility_evidence_below_90pct_reproducibility': 8}
+round 5: active=16 status={'continue_sampling': 16, 'futility_evidence_below_90pct_reproducibility': 8}
+round 6: active=16 status={'continue_sampling': 16, 'futility_evidence_below_90pct_reproducibility': 8}
+round 7: active=16 status={'continue_sampling': 16, 'futility_evidence_below_90pct_reproducibility': 8}
+round 8: active=16 status={'continue_sampling': 16, 'futility_evidence_below_90pct_reproducibility': 8}
+round 9: active=16 status={'continue_sampling': 16, 'futility_evidence_below_90pct_reproducibility': 8}
+round 10: active=16 status={'continue_sampling': 16, 'futility_evidence_below_90pct_reproducibility': 8}
+round 11: active=16 status={'continue_sampling': 16, 'futility_evidence_below_90pct_reproducibility': 8}
+round 12: active=16 status={'continue_sampling': 16, 'futility_evidence_below_90pct_reproducibility': 8}
+round 13: active=16 status={'confirmed_median_ratio_above_threshold': 15, 'continue_sampling': 1, 'futility_evidence_below_90pct_reproducibility': 8}
+round 14: active=1 status={'confirmed_median_ratio_above_threshold': 15, 'continue_sampling': 1, 'futility_evidence_below_90pct_reproducibility': 8}
+round 15: active=1 status={'confirmed_median_ratio_above_threshold': 15, 'continue_sampling': 1, 'futility_evidence_below_90pct_reproducibility': 8}
+round 16: active=1 status={'confirmed_median_ratio_above_threshold': 15, 'continue_sampling': 1, 'futility_evidence_below_90pct_reproducibility': 8}
+round 17: active=1 status={'confirmed_median_ratio_above_threshold': 15, 'continue_sampling': 1, 'futility_evidence_below_90pct_reproducibility': 8}
+round 18: active=1 status={'confirmed_median_ratio_above_threshold': 16, 'futility_evidence_below_90pct_reproducibility': 8}
