@@ -12,7 +12,9 @@ def main():
     out = root / 'results'
     detailed = (out / 'rounds.json').exists()
     compact = (not detailed) and (out / 'worker_outcomes.json').exists()
+    observations_only = (not detailed) and (not compact) and (out / 'observations.json').exists()
     rounds = json.loads((out / ('rounds.json' if detailed else 'worker_outcomes.json')).read_text()) if (detailed or compact) else None
+    observations_map = json.loads((out / 'observations.json').read_text()) if observations_only else None
     if (out / 'summary.json').exists():
         summary = json.loads((out / 'summary.json').read_text())
     else:
@@ -59,8 +61,14 @@ def main():
         assert len(all_seeds) == len(rounds) == 18
         assert not any(a.classify(obs, 24)['status'] == 'continue_sampling' for obs in states.values())
         assert len({x['source_sha'] for x in rounds}) == 1
+    elif observations_only:
+        assert set(observations_map) == set(states)
+        states = observations_map
+        for obs in states.values():
+            assert all(a.classify(obs[:i], 24)['status'] == 'continue_sampling' for i in range(1, len(obs)))
+            assert a.classify(obs, 24)['status'] != 'continue_sampling'
     for item in summary:
-        if rounds is not None:
+        if rounds is not None or observations_only:
             obs = states[item['id']]
             v = a.classify(obs, 24)
             assert item['workers_used'] == len(obs)
@@ -79,7 +87,7 @@ def main():
     assert all(x['status'] == 'confirmed_median_ratio_above_threshold' for x in positive)
     assert all(x['status'] == 'futility_evidence_below_90pct_reproducibility' for x in negative)
     _, alpha = a.thresholds(24)
-    if rounds is not None:
+    if rounds is not None or observations_only:
         assert stats['adaptive_worker_samples'] == sum(len(x) for x in states.values()) == 245
     else:
         assert stats['adaptive_worker_samples'] == 245
@@ -90,7 +98,7 @@ def main():
     assert stats['futility_null_crossing_probability'] <= alpha
     assert a.exact_crossing_probability(.5, 'confirm', 24) == stats['confirm_null_crossing_probability']
     assert a.exact_crossing_probability(.9, 'futility', 24) == stats['futility_null_crossing_probability']
-    mode = 'full block records' if detailed else 'compact worker outcomes' if compact else 'summary-only audit'
+    mode = 'full block records' if detailed else 'compact worker outcomes' if compact else 'per-candidate observation sequences' if observations_only else 'summary-only audit'
     print('PASS: 24 finalists, adaptive stopping chronology, 245 process samples, 735 paired blocks (' + mode + ')')
     print('PASS: 16 positive controls confirmed; 8 A/A controls stopped for futility')
     print('PASS: finite-horizon null crossing bounds are below per-claim alpha')
