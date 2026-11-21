@@ -1,8 +1,28 @@
 {
-  "benchmark":"zipp.Path.glob filelist-versus-namelist implementation tradeoff",
-  "issue":{"url":"https://github.com/jaraco/zipp/issues/106","title":"Path.glob complexity with directory depth"},
-  "performance_pr":{"url":"https://github.com/jaraco/zipp/pull/113","base":"4cceb497c278ad0ecb11a9472e58f4130f5ff16b","head":"171fa98236a1adfc316c3bc5cdc5eaa4b9548424","merge":"48b72b8db6ae5f7712323aca6b340744db15f576","merged_at":"2024-03-13T02:46:42Z"},
-  "directory_correctness_pr":{"url":"https://github.com/jaraco/zipp/pull/122","base":"21c6bfd6ed451640ec3a69e1239fab053e1d7d6f","head":"5d89a1cf540894ef28c0b6485daf01c860bd59d0","merge":"579be51bb31881a8e04040ff7a7c134053540326","merged_at":"2024-08-11T16:24:42Z"},
-  "runtime_environment":{"python":"3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]","platform":"Linux-6.18.57-x86_64-with-glibc2.41","zipp_version":"4.1.0","installed_glob_source_sha256":"04823b18143e8dff7667c494bce4791c6df1fa745753f7a7b72cbc08d2e8f8a6"},
-  "scope_note":"PR #113 glob core is transplanted into the installed post-PR-122 zipp implementation. This is not a full historical wheel/commit checkout."
+  "benchmark": "zipp.Path.glob filelist-versus-namelist implementation tradeoff",
+  "issue": {
+    "url": "https://github.com/jaraco/zipp/issues/106",
+    "title": "Path.glob complexity with directory depth"
+  },
+  "performance_pr": {
+    "url": "https://github.com/jaraco/zipp/pull/113",
+    "base": "4cceb497c278ad0ecb11a9472e58f4130f5ff16b",
+    "head": "171fa98236a1adfc316c3bc5cdc5eaa4b9548424",
+    "merge": "48b72b8db6ae5f7712323aca6b340744db15f576",
+    "merged_at": "2024-03-13T02:46:42Z"
+  },
+  "directory_correctness_pr": {
+    "url": "https://github.com/jaraco/zipp/pull/122",
+    "base": "21c6bfd6ed451640ec3a69e1239fab053e1d7d6f",
+    "head": "5d89a1cf540894ef28c0b6485daf01c860bd59d0",
+    "merge": "579be51bb31881a8e04040ff7a7c134053540326",
+    "merged_at": "2024-08-11T16:24:42Z"
+  },
+  "runtime_environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "zipp_version": "4.1.0",
+    "installed_glob_source_sha256": "04823b18143e8dff7667c494bce4791c6df1fa745753f7a7b72cbc08d2e8f8a6"
+  },
+  "scope_note": "PR #113 glob core is transplanted into the installed post-PR-122 zipp implementation. This is not a full historical wheel/commit checkout."
 }
