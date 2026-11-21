@@ -1,7 +1,7 @@
 {
   "zipp_version": "4.1.0",
-  "seeds": [701, 702, 703],
-  "depths": [16, 32, 64, 128, 256, 512, 1024],
+  "seeds": [701,702,703],
+  "depths": [16,32,64,128,256,512,1024],
   "paired_blocks_per_worker": 7,
   "workers": 3,
   "total_paired_blocks": 147,
