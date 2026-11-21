@@ -1,0 +1,20 @@
+{
+  "zipp_version":"4.1.0",
+  "seeds":[701,702,703],
+  "depths":[16,32,64,128,256,512,1024],
+  "paired_blocks_per_worker":7,
+  "workers":3,
+  "total_paired_blocks":147,
+  "rows":[
+    {"depth":16,"median_namelist_ns":105800.78571428571,"median_filelist_ns":44778.13333333333,"speedup":2.3627779417845103,"explicit_file_entries":16,"implied_parent_visits":120,"namelist_worker_wins":3},
+    {"depth":32,"median_namelist_ns":306997.5,"median_filelist_ns":80738.33333333333,"speedup":3.8023759882748798,"explicit_file_entries":32,"implied_parent_visits":496,"namelist_worker_wins":3},
+    {"depth":64,"median_namelist_ns":1038875.0,"median_filelist_ns":177367.0,"speedup":5.857205680876375,"explicit_file_entries":64,"implied_parent_visits":2016,"namelist_worker_wins":3},
+    {"depth":128,"median_namelist_ns":3711542.0,"median_filelist_ns":347574.0,"speedup":10.67842243666097,"explicit_file_entries":128,"implied_parent_visits":8128,"namelist_worker_wins":3},
+    {"depth":256,"median_namelist_ns":15929176.0,"median_filelist_ns":734066.0,"speedup":21.699923440126636,"explicit_file_entries":256,"implied_parent_visits":32640,"namelist_worker_wins":3},
+    {"depth":512,"median_namelist_ns":69592840.0,"median_filelist_ns":1706040.0,"speedup":40.792033012121635,"explicit_file_entries":512,"implied_parent_visits":130816,"namelist_worker_wins":3},
+    {"depth":1024,"median_namelist_ns":370841162.0,"median_filelist_ns":3993045.0,"speedup":92.87177129233454,"explicit_file_entries":1024,"implied_parent_visits":523776,"namelist_worker_wins":3}
+  ],
+  "log_log_slopes":{"namelist":1.9611935707053525,"filelist":1.081690474242279},
+  "semantic_probe":{"file_pattern_baseline":["a.txt"],"file_pattern_filelist":["a.txt"],"directory_pattern_namelist":["d/"],"directory_pattern_filelist":[]},
+  "upstream":{"issue":"jaraco/zipp#106","performance_pr":"jaraco/zipp#113","performance_merge":"48b72b8db6ae5f7712323aca6b340744db15f576","directory_correctness_pr":"jaraco/zipp#122","directory_correctness_merge":"579be51bb31881a8e04040ff7a7c134053540326"}
+}
