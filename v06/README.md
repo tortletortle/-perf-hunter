@@ -5,10 +5,10 @@ V0.6 replaces the fixed 10-worker/5-block validation protocol with sequential, p
 ## Run
 From the repository root:
 
-\`\`\`bash
+```bash
 python v06/adaptive.py --output v06/results
 python v06/verify.py
-\`\`\`
+```
 
 Requires CPython 3.13.5 and the standard library. Assertions must remain enabled. The source expects the V0.2, V0.4 and V0.5 files in their repository paths.
 
@@ -23,7 +23,7 @@ There are 24 finalists and two possible inferential claims per finalist. Bonferr
 
 Both are nonnegative mixture likelihood-ratio supermartingales under their respective composite nulls. Ville's inequality plus Bonferroni controls the familywise error across both claim types, assuming independent fresh-process observations for each finalist and a stable measurement protocol. Cross-finalist dependence does not invalidate Bonferroni. Host-level temporal dependence can still compromise the independence assumption; process isolation and randomized order mitigate but do not eliminate it.
 
-The finite-horizon exact crossing probabilities under the boundary nulls are calculated by dynamic programming in \`adaptive.py\`; they are 0.00017166 for confirmation at p=0.5 and 0.00028163 for futility at p=0.9, both below 0.00104167.
+The finite-horizon exact crossing probabilities under the boundary nulls are calculated by dynamic programming in `adaptive.py`; they are 0.00017166 for confirmation at p=0.5 and 0.00028163 for futility at p=0.9, both below 0.00104167.
 
 ## Observed results
 - 24 finalists: 16 issue-inspired positive controls and 8 identical-implementation A/A negative controls.
@@ -35,12 +35,12 @@ The finite-horizon exact crossing probabilities under the boundary nulls are cal
 This is a controlled result on the existing two issue-inspired adapters and an A/A control, not a general benchmark-wide sensitivity/specificity estimate. It does not establish algorithmic novelty or cross-machine robustness. The old and new protocols use different numbers of blocks per worker (5 vs 3), so the comparison is in paired timing blocks, not wall-clock time or total process-launch cost.
 
 ## Files
-- \`adaptive.py\`: sequential mixture-e testing and process orchestration.
-- \`test_adaptive.py\`: unit tests for e-values, stopping rules and finite-horizon error bounds.
-- \`verify.py\`: checks raw or compact worker records, or falls back to summary-level verification when raw records are not present.
-- \`reference/finalists.json\`: frozen V0.5 finalist set used for this validation.
-- \`results/rounds.json\`: full raw per-round worker records and paired blocks (included in the downloadable bundle).
-- \`results/observations.json\`: compact per-candidate process-median sequences for GitHub-side audit.
-- \`results/worker_outcomes.json\`: compact per-round outcomes (included in the bundle); excludes raw within-process block timings.
-- \`results/summary.json\`, \`summary.csv\`: finalist-level outcomes.
-- \`results/protocol_stats.json\`: budget and null-bound calculations.
+- `adaptive.py`: sequential mixture-e testing and process orchestration.
+- `test_adaptive.py`: unit tests for e-values, stopping rules and finite-horizon error bounds.
+- `verify.py`: checks raw or compact worker records, or falls back to summary-level verification when raw records are not present.
+- `reference/finalists.json`: frozen V0.5 finalist set used for this validation.
+- `results/rounds.json`: full raw per-round worker records and paired blocks (included in the downloadable bundle).
+- `results/observations.json`: compact per-candidate process-median sequences for GitHub-side audit.
+- `results/worker_outcomes.json`: compact per-round outcomes (included in the bundle); excludes raw within-process block timings.
+- `results/summary.json`, `summary.csv`: finalist-level outcomes.
+- `results/protocol_stats.json`: budget and null-bound calculations.
