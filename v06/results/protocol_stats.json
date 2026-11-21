@@ -1,0 +1,12 @@
+{
+  "finalist_count": 24,
+  "max_workers": 20,
+  "blocks_per_worker": 3,
+  "adaptive_worker_samples": 245,
+  "adaptive_paired_blocks": 735,
+  "fixed_v05_paired_blocks": 1200,
+  "paired_blocks_saved": 465,
+  "paired_block_reduction": 0.38749999999999996,
+  "confirm_null_crossing_probability": 0.000171661376953125,
+  "futility_null_crossing_probability": 0.0002816278523759707
+}
