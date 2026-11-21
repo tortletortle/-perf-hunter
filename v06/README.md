@@ -41,6 +41,6 @@ This is a controlled result on the existing two issue-inspired adapters and an A
 - `reference/finalists.json`: frozen V0.5 finalist set used for this validation.
 - `results/rounds.json`: full raw per-round worker records and paired blocks (included in the downloadable bundle).
 - `results/observations.json`: compact per-candidate process-median sequences for GitHub-side audit.
-- `results/worker_outcomes.json`: compact per-round outcomes (included in the bundle); excludes raw within-process block timings.
-- `results/summary.json`, `summary.csv`: finalist-level outcomes.
-- `results/protocol_stats.json`: budget and null-bound calculations.
+- `results/summary.csv`: finalist-level table committed to the repository.
+- `results/summary.json`: full JSON summary included in the downloadable bundle.
+- `results/protocol_stats.json`, `manifest.json`: budget, null-bound calculations and file hashes.
