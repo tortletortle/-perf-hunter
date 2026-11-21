@@ -1,0 +1,35 @@
+{
+  "project": "PERF HUNTER",
+  "version": "V0.6",
+  "generated_utc": "2026-11-21T04:46:43.120733+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "files": {
+    "v02/legacy.py": "132e97d6d0753a73be053cfd502c1dddd44fa15daadad90f174758d93ce7b442",
+    "v04/benchmark.py": "f797be830f866b72c5cda2a41338dac63acc5a22e5dd6eb4ca51afa850ad1651",
+    "v05/search.py": "b046a9847023d393c0ebc5a6875e164caea561784ead1a7702c58ca89c12b935",
+    "v06/adaptive.py": "5a03840f8cf5a6b539ebccf5fdb046394ec0176ea546259f9995a6d5737dcdc9",
+    "v06/test_adaptive.py": "f777cf842be3cdcd1462f3304ff862212747a17217609ca586a13c2e72ef8fd3",
+    "v06/verify.py": "d30721780b809d732ad569a532da56bb8cb35e27",
+    "v06/reference/finalists.json": "b3cf2655b2bb0a4eb08ac60f83c6626880d43718",
+    "v06/results/rounds.json": "b1b83144e39dd7da100027ce78b8e98d3114f5163875ecaade72e7a92e217d68",
+    "v06/results/worker_outcomes.json": "1fc82e969b12ea5ab0a2976c267d90c4419a3450707ca969880d0b907513a295",
+    "v06/results/observations.json": "b09560a1cf879a0e9882cd4c06d24718553327c4b2a25ceb7ba205fce05a835f",
+    "v06/results/summary.json": "767aee60f398908c0d651d3494624a0a777eff56980f6fd80c9538dd143d8e70",
+    "v06/results/summary.csv": "3628e1cabe9142cc539448830d6a7b698974e56041c834c15ae95992632005ac",
+    "v06/results/protocol_stats.json": "f86d2f0923d9e4e039bbffa993ed68a06ebc47ac6ec2f06d6f6efa6f94bfd3ff",
+    "v06/results/run.log": "90c4c0451aaaa5f57183edf2e34770eef1fc6935b41c7d12dbb8101a7ef29c8a"
+  },
+  "experiment": {
+    "finalist_count": 24,
+    "max_workers": 20,
+    "blocks_per_worker": 3,
+    "adaptive_worker_samples": 245,
+    "adaptive_paired_blocks": 735,
+    "fixed_v05_paired_blocks": 1200,
+    "paired_blocks_saved": 465,
+    "paired_block_reduction": 0.38749999999999996,
+    "confirm_null_crossing_probability": 0.000171661376953125,
+    "futility_null_crossing_probability": 0.0002816278523759707
+  }
+}
