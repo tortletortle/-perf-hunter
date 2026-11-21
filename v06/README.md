@@ -37,7 +37,7 @@ This is a controlled result on the existing two issue-inspired adapters and an A
 ## Files
 - \`adaptive.py\`: sequential mixture-e testing and process orchestration.
 - \`test_adaptive.py\`: unit tests for e-values, stopping rules and finite-horizon error bounds.
-- \`verify.py\`: checks saved worker records, stopping chronology, summary values and budget accounting.
+- \`verify.py\`: checks raw or compact worker records, or falls back to summary-level verification when raw records are not present.
 - \`reference/finalists.json\`: frozen V0.5 finalist set used for this validation.
 - \`results/rounds.json\`: full raw per-round worker records and paired blocks (included in the downloadable bundle).
 - \`results/worker_outcomes.json\`: compact per-process outcomes for GitHub-side audit; excludes raw within-process block timings.
