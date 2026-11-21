@@ -10,3 +10,6 @@ Three cases, two strategies (random and best-parent mutation), four search seeds
 
 ## Limitations
 Two issue-inspired adapters, not exact upstream revision pairs or new defect discoveries. In particular, the V0.4 ZIP workload is only a name-list mechanism proxy for zipp #106, not an exact `Path.glob` reproduction; see V0.7 for the PR #113 / PR #122 tradeoff. Four search seeds and small workload spaces; no evidence of general mutation superiority. Equal evaluation budget, not equal elapsed time. Sequential subprocesses on one host; no CPU pinning or cross-machine replication. Alpha and threshold are experimental settings. Raw data are in the downloadable bundle. Next: independent upstream revision pairs, realistic workload grammars, randomized interleaving across machines and budget-aware confirmation.
+
+
+Provenance clarification: the V0.4 ZIP workload is a mechanism-level proxy for zipp #106, not a direct Path.glob reproduction. V0.7 reproduces the PR #113 filelist implementation and the later PR #122 directory-correctness restoration.
