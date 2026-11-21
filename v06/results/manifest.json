@@ -1,7 +1,7 @@
 {
   "project": "PERF HUNTER",
   "version": "V0.6",
-  "generated_utc": "2026-11-21T04:46:43.120733+00:00",
+  "generated_utc": "2026-11-21T04:48:15.718111+00:00",
   "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
   "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
   "files": {
@@ -10,13 +10,13 @@
     "v05/search.py": "b046a9847023d393c0ebc5a6875e164caea561784ead1a7702c58ca89c12b935",
     "v06/adaptive.py": "5a03840f8cf5a6b539ebccf5fdb046394ec0176ea546259f9995a6d5737dcdc9",
     "v06/test_adaptive.py": "f777cf842be3cdcd1462f3304ff862212747a17217609ca586a13c2e72ef8fd3",
-    "v06/verify.py": "d30721780b809d732ad569a532da56bb8cb35e27",
-    "v06/reference/finalists.json": "b3cf2655b2bb0a4eb08ac60f83c6626880d43718",
+    "v06/verify.py": "8616a8e4e7ef2e9709daf1b8c2f0a568a93aa651b5f1d7ed780c85578c198e99",
+    "v06/reference/finalists.json": "95868d3b31eb727b786d84c7580d797dc3ceccb4439a1abcdc300f19242d7153",
     "v06/results/rounds.json": "b1b83144e39dd7da100027ce78b8e98d3114f5163875ecaade72e7a92e217d68",
     "v06/results/worker_outcomes.json": "1fc82e969b12ea5ab0a2976c267d90c4419a3450707ca969880d0b907513a295",
     "v06/results/observations.json": "b09560a1cf879a0e9882cd4c06d24718553327c4b2a25ceb7ba205fce05a835f",
     "v06/results/summary.json": "767aee60f398908c0d651d3494624a0a777eff56980f6fd80c9538dd143d8e70",
-    "v06/results/summary.csv": "3628e1cabe9142cc539448830d6a7b698974e56041c834c15ae95992632005ac",
+    "v06/results/summary.csv": "1068ee43ee1fb77f121db77f78265326b32e11df460fa249e4eeeb86950a1434",
     "v06/results/protocol_stats.json": "f86d2f0923d9e4e039bbffa993ed68a06ebc47ac6ec2f06d6f6efa6f94bfd3ff",
     "v06/results/run.log": "90c4c0451aaaa5f57183edf2e34770eef1fc6935b41c7d12dbb8101a7ef29c8a"
   },
