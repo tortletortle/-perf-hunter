@@ -40,6 +40,7 @@ This is a controlled result on the existing two issue-inspired adapters and an A
 - \`verify.py\`: checks raw or compact worker records, or falls back to summary-level verification when raw records are not present.
 - \`reference/finalists.json\`: frozen V0.5 finalist set used for this validation.
 - \`results/rounds.json\`: full raw per-round worker records and paired blocks (included in the downloadable bundle).
-- \`results/worker_outcomes.json\`: compact per-process outcomes for GitHub-side audit; excludes raw within-process block timings.
+- \`results/observations.json\`: compact per-candidate process-median sequences for GitHub-side audit.
+- \`results/worker_outcomes.json\`: compact per-round outcomes (included in the bundle); excludes raw within-process block timings.
 - \`results/summary.json\`, \`summary.csv\`: finalist-level outcomes.
 - \`results/protocol_stats.json\`: budget and null-bound calculations.
