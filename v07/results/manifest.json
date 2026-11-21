@@ -1,0 +1,26 @@
+{
+  "project":"PERF HUNTER",
+  "version":"V0.7",
+  "generated_utc":"2026-11-21T05:01:48.899963+00:00",
+  "python":"3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform":"Linux-6.18.57-x86_64-with-glibc2.41",
+  "files":{
+    "v07/zipp_glob_benchmark.py":"e7c5d2531e74a7018bca7fb6182edeac55048ff6d78f15548658352945831227",
+    "v07/test_zipp_glob.py":"2648d4baf9223b630a309e7f18d0dfca755aeb9770129fb5e65bcbf2c83aa7ce",
+    "v07/verify.py":"22b16b8994375149f2ddf410eee6ef45070ed0ac043003fae2451e2a2ef8337b",
+    "v07/README.md":"7e73fae1a2ad30e5458f675d8a9515c578516787528449377d2f8825c7687270",
+    "v07/results/provenance.json":"58a42f1c9a0195411f712eb6048c0fe142bbde50ee29c3178374026d048da41d",
+    "v07/results/workers.json":"eea2bf43f600f3e7d1c471110fa0c9b375654e4b40fc1f7cfa4c0788c970ad09",
+    "v07/results/worker_summary.json":"aa640119b8b28365136cb799f1e97ad4dd1269bce9eab140b0d74b2daccd3542",
+    "v07/results/summary.json":"4f0509dbe1858e21e21f819f5aa4d27d2e99a568186af8ec44be854795510393",
+    "v07/results/summary.csv":"ad6024767e0734a2fd583c529989ee35970e256163ed35935d8603d01596ac1f",
+    "v07/results/run.log":"0c08f666ff40abc7df79248a414dc55a2ab997deb43818f05a6828e29a981cb8"
+  },
+  "upstream":{
+    "issue":"jaraco/zipp#106",
+    "performance_pr":"jaraco/zipp#113",
+    "performance_merge":"48b72b8db6ae5f7712323aca6b340744db15f576",
+    "directory_correctness_pr":"jaraco/zipp#122",
+    "directory_correctness_merge":"579be51bb31881a8e04040ff7a7c134053540326"
+  }
+}
