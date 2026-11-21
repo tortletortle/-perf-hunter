@@ -16,3 +16,21 @@ round 15: active=1 status={'confirmed_median_ratio_above_threshold': 15, 'contin
 round 16: active=1 status={'confirmed_median_ratio_above_threshold': 15, 'continue_sampling': 1, 'futility_evidence_below_90pct_reproducibility': 8}
 round 17: active=1 status={'confirmed_median_ratio_above_threshold': 15, 'continue_sampling': 1, 'futility_evidence_below_90pct_reproducibility': 8}
 round 18: active=1 status={'confirmed_median_ratio_above_threshold': 16, 'futility_evidence_below_90pct_reproducibility': 8}
+{
+  "finalist_count": 24,
+  "max_workers": 20,
+  "blocks_per_worker": 3,
+  "adaptive_worker_samples": 245,
+  "adaptive_paired_blocks": 735,
+  "fixed_v05_paired_blocks": 1200,
+  "paired_blocks_saved": 465,
+  "paired_block_reduction": 0.38749999999999996,
+  "confirm_null_crossing_probability": 0.000171661376953125,
+  "futility_null_crossing_probability": 0.0002816278523759707
+}
+deepcopy random statuses= {'confirmed_median_ratio_above_threshold': 4} median_workers= 13.0
+deepcopy mutate statuses= {'confirmed_median_ratio_above_threshold': 4} median_workers= 13.0
+zip random statuses= {'confirmed_median_ratio_above_threshold': 4} median_workers= 13.0
+zip mutate statuses= {'confirmed_median_ratio_above_threshold': 4} median_workers= 13.0
+aa random statuses= {'futility_evidence_below_90pct_reproducibility': 4} median_workers= 4.0
+aa mutate statuses= {'futility_evidence_below_90pct_reproducibility': 4} median_workers= 4.0
