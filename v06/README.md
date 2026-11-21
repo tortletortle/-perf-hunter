@@ -32,7 +32,7 @@ The finite-horizon exact crossing probabilities under the boundary nulls are cal
 - All 16 positive-control finalists reached confirmation. Fifteen stopped after 13 workers; one required 18 workers because one worker median fell below threshold.
 - All 8 A/A finalists stopped for futility after 4 workers (0/4 successes).
 
-This is a controlled result on the existing two issue-inspired adapters and an A/A control, not a general benchmark-wide sensitivity/specificity estimate. It does not establish algorithmic novelty or cross-machine robustness. The old and new protocols use different numbers of blocks per worker (5 vs 3), so the comparison is in paired timing blocks, not wall-clock time or total process-launch cost.
+This is a controlled result on the existing two issue-inspired adapters and an A/A control, not a general benchmark-wide sensitivity/specificity estimate. The V0.4 ZIP case is only a mechanism-level proxy for zipp #106; V0.7 separately reproduces the upstream `filelist` optimization and later directory-correctness revert. It does not establish algorithmic novelty or cross-machine robustness. The old and new protocols use different numbers of blocks per worker (5 vs 3), so the comparison is in paired timing blocks, not wall-clock time or total process-launch cost.
 
 ## Files
 - `adaptive.py`: sequential mixture-e testing and process orchestration.
